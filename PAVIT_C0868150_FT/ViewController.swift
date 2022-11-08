@@ -40,10 +40,10 @@ class ViewController: UIViewController {
             print("wrong answer")
             let alert = UIAlertController(title: "Result", message: "Oops... Wrong answer correct answer was Odd", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Play Again", style: .default))
-            alert.addAction(UIAlertAction(title: "Show Progress", style: .default))
+            alert.addAction(UIAlertAction(title: "Show Progress", style: .default, handler: { _ in self.resultscreen()}))
             present(alert,animated: true, completion: { return })
-            print(title)
         }
+        loadRandomNumber()
     }
     @objc func isOdd(){
         let number = Int(self.number.text!) ?? 0
@@ -52,15 +52,14 @@ class ViewController: UIViewController {
             print("correct its odd")
         }
         else {
-            print("wrong answer")
             resImage.image = UIImage(named: "wrong")
             let alert = UIAlertController(title: "Result", message: "Oops... Wrong answer correct answer was Even", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "Play Again", style: .default, handler: nil))
-            alert.addAction(UIAlertAction(title: "Show Progress", style: .default, handler: nil))
+            alert.addAction(UIAlertAction(title: "Play Again", style: .default))
+            alert.addAction(UIAlertAction(title: "Show Progress", style: .default, handler: { _ in self.resultscreen()}))
             present(alert,animated: true, completion: { return })
         }
+        loadRandomNumber()
     }
-    
     
     
     
@@ -68,7 +67,7 @@ class ViewController: UIViewController {
     func loadRandomNumber() {
         let number = Int(arc4random_uniform(100))
         self.number.text = "\(number)"
-        resImage.image = UIImage(named: "")
+       //resImage.image = UIImage(named: "")
     }
     
     func isEvenOdd(number: Int) -> Bool {
@@ -82,10 +81,10 @@ class ViewController: UIViewController {
         }
     }
     
-    
     @IBAction func evenBtnpress(_ sender: UIButton) {
         
         isEven()
+        
     }
     
     @IBAction func oddBtnpress(_ sender: UIButton) {
@@ -93,7 +92,14 @@ class ViewController: UIViewController {
         isOdd()
     }
     
-    
+    func resultscreen(){
+            let mainSB : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let ProgressVC = mainSB.instantiateViewController(withIdentifier: "ProgressScene")
+//            ProgressVC.imageName = "wrong"
+//            ProgressVC.number = number
+//            ProgressVc.title = 
+            navigationController?.pushViewController(ProgressVC, animated: true)
+        }
     
 }
 

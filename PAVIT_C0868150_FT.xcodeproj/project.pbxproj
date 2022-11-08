@@ -13,7 +13,8 @@
 		33BEE3162919CC88009A1D44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33BEE3142919CC88009A1D44 /* Main.storyboard */; };
 		33BEE3182919CC89009A1D44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33BEE3172919CC89009A1D44 /* Assets.xcassets */; };
 		33BEE31B2919CC89009A1D44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33BEE3192919CC89009A1D44 /* LaunchScreen.storyboard */; };
-		33BEE3232919E048009A1D44 /* ProgressTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BEE3222919E048009A1D44 /* ProgressTableVC.swift */; };
+		33BEE3252919E113009A1D44 /* ProgressCellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BEE3242919E113009A1D44 /* ProgressCellVC.swift */; };
+		33BEE3272919E7AF009A1D44 /* ProgressTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BEE3262919E7AF009A1D44 /* ProgressTableVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +26,8 @@
 		33BEE3172919CC89009A1D44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		33BEE31A2919CC89009A1D44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		33BEE31C2919CC89009A1D44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		33BEE3222919E048009A1D44 /* ProgressTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressTableVC.swift; sourceTree = "<group>"; };
+		33BEE3242919E113009A1D44 /* ProgressCellVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCellVC.swift; sourceTree = "<group>"; };
+		33BEE3262919E7AF009A1D44 /* ProgressTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressTableVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +67,8 @@
 				33BEE3172919CC89009A1D44 /* Assets.xcassets */,
 				33BEE3192919CC89009A1D44 /* LaunchScreen.storyboard */,
 				33BEE31C2919CC89009A1D44 /* Info.plist */,
-				33BEE3222919E048009A1D44 /* ProgressTableVC.swift */,
+				33BEE3242919E113009A1D44 /* ProgressCellVC.swift */,
+				33BEE3262919E7AF009A1D44 /* ProgressTableVC.swift */,
 			);
 			path = PAVIT_C0868150_FT;
 			sourceTree = "<group>";
@@ -143,8 +146,9 @@
 			files = (
 				33BEE3132919CC88009A1D44 /* ViewController.swift in Sources */,
 				33BEE30F2919CC88009A1D44 /* AppDelegate.swift in Sources */,
-				33BEE3232919E048009A1D44 /* ProgressTableVC.swift in Sources */,
+				33BEE3252919E113009A1D44 /* ProgressCellVC.swift in Sources */,
 				33BEE3112919CC88009A1D44 /* SceneDelegate.swift in Sources */,
+				33BEE3272919E7AF009A1D44 /* ProgressTableVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
